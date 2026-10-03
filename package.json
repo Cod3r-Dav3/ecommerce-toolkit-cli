@@ -1,0 +1,35 @@
+{
+  "name": "ecommerce-toolkit-cli",
+  "version": "1.0.0",
+  "description": "CLI Toolkit com utilitários para E-commerce: Gerador de QR Code (Terminal e PNG) e Senhas Seguras com Análise de Entropia",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/index.js",
+    "dev": "node --watch --env-file-if-exists=.env src/index.js",
+    "build": "tsup src/index.js --format esm --clean"
+  },
+  "keywords": [
+    "cli",
+    "ecommerce",
+    "qrcode",
+    "password-generator",
+    "security",
+    "tools"
+  ],
+  "author": "C0d3r_D@v3",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^6.0.0",
+    "prompt": "^1.3.0",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "@types/qrcode": "^1.5.6",
+    "tsup": "^8.5.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
